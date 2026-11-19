@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: dune-configurator
-  version: "3.24.2"
+  version: "3.25.0"
 
   library: ${{ "Library/" if not unix else "" }}
   m2: ${{ "m2-" if not unix else "" }}
@@ -14,7 +14,7 @@ package:
 
 source:
   url: https://github.com/ocaml/dune/releases/download/${{ version }}/dune-${{ version }}.tbz
-  sha256: 472798691b0216daf538709f0f4703b3617ef24ad0866c9096068baaba4d762a
+  sha256: 1d706779fa8405769a1ae667e4baaf4220ed87ec9d8be9d4fea0cf75bd79013b
 
 build:
   number: 0

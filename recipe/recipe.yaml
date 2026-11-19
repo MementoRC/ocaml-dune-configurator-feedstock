@@ -36,6 +36,7 @@ requirements:
     - if: not unix
       then:
         - m2-bash
+        - m2-coreutils
   host:
     - ocaml ${{ ocaml_compiler_version }}.* ${{ c_toolchain }}
     - ocaml-csexp >=1.5
@@ -58,6 +59,7 @@ tests:
         - if: not unix
           then:
             - m2-bash
+            - m2-coreutils
 
 about:
   homepage: https://github.com/ocaml/dune

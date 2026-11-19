@@ -53,7 +53,7 @@ requirements:
     - if: build_platform != target_platform and not unix
       then:
         - ocaml_${{ build_platform }} ${{ ocaml_compiler_version }}.* gcc_*
-    - ocaml-dune >=3.4
+    - ocaml-dune >=${{ version }}
     - ${{ m2 }}make
     - if: not unix
       then:
